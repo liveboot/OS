@@ -23,7 +23,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
 
       - name: Install nixfmt
-        run: nix-env -i mypackage -f '<nixpkgs>'
+        run: nix-env -i nixfmt -f '<nixpkgs>'
 
       - name: Lint
         run: ./lint.sh
