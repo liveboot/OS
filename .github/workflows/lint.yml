@@ -20,5 +20,8 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v31
 
+      - name: Install nixfmt
+        run: nix-env -i mypackage -f '<nixpkgs>'
+
       - name: Lint
         run: ./lint.sh
