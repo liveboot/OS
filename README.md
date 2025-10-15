@@ -28,8 +28,20 @@
 - OVMF - for VM with UEFI support
 - nixfmt - for linting and formatting
 
-> [!IMPORTANT]
+> [!NOTE]
 > Depending on your local Nix installation, you may have to run some of the following commands with elevated privileges.
+
+Clone the repo:
+
+```
+git clone https://github.com/liveboot/OS liveboot-os
+cd liveboot-os
+```
+
+> [!IMPORTANT]
+> It's very important to clone instead of downloading the source as-is.
+> Nix relies on information by Git, saved in the hidden `.git` folder.
+> This folder is missing on source code downloads.
 
 ### ISO
 
