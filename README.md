@@ -3,7 +3,7 @@
         <img src="assets/liveboot.svg" alt="Liveboot Logo" width="120" />
     </a>
     <h1>
-        <a href="https://liveboot.org">Liveboot.org</a>
+        <a href="https://liveboot.org">Liveboot</a>
     </h1>
     <p>
         <strong>Modern rescue OS - ISO built with Nix</strong>
