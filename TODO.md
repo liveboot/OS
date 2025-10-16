@@ -7,7 +7,7 @@ Check current ISO for unwanted things. Remove first, then add.
 - [ ] /etc/os-release
 - [ ] fastfetch alias (with logo)
 - [ ] hardware configuration (special nvidia stuff)
-- [ ] kernel params (quiet splash msr.allow_writes=on)
+- [X] kernel params (quiet splash msr.allow_writes=on)
 - [ ] general boot speedup
 
 ## Themes
@@ -36,6 +36,6 @@ Check current ISO for unwanted things. Remove first, then add.
 
 ## Automation
 
-- [ ] lint ci/cd
+- [X] lint ci/cd
 - [ ] nix flake update
 - [ ] building ISO, upload artifact

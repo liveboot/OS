@@ -4,9 +4,11 @@ set -e
 ./iso.sh
 
 ISO="result/iso/liveboot.iso"
-QEMU_OPTS=(-boot d -cdrom "$ISO" -m 4G -enable-kvm)
+CORES=$(expr $(nproc) / 2)
+QEMU_OPTS=(-boot d -cdrom "$ISO" -m 4G -cpu host -smp cores=$CORES -name Liveboot -enable-kvm)
 
-if [ ! -z $OVMF ]; then
+if [ -z $OVMF ]; then
+    # default path on Arch
     OVMF="/usr/share/ovmf/x64/OVMF.4m.fd"
 fi
 

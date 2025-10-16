@@ -5,6 +5,6 @@
   };
   isoImage = {
     volumeID = "Liveboot";
-    squashfsCompression = "gzip -Xcompression-level 1";
+    squashfsCompression = "lz4";
   };
 }
