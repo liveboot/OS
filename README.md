@@ -53,7 +53,7 @@ Building can take quite a while.
 Subsequent builds using the same packages are cached.
 
 If you are regularly building Liveboot.org, you may notice your disk usage steadily going up.
-This happens because of old packages still residing in the Nix store. See [section below](#updating-packages).
+This happens because of old packages and ISOs still residing in the Nix store. See [section below](#updating-packages).
 
 ### VM
 
@@ -91,5 +91,7 @@ nix flake update
 As usually lots of Nix store entries are invalidated, it's a good idea to clean up your local store afterwards:
 
 ```
-nix-store --gc
+nix store gc
 ```
+
+Old ISOs can also clog up the store over time. Either manually remove them or run a garbage collection (preferred).

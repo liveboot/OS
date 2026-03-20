@@ -12,7 +12,8 @@ Check current ISO for unwanted things. Remove first, then add.
 
 ## Themes
 
-- [ ] grub/syslinux
+- [X] syslinux
+- [ ] grub
 - [ ] plymouth
 - [ ] DE
 - [ ] mouse cursor
@@ -28,7 +29,7 @@ Check current ISO for unwanted things. Remove first, then add.
   - [ ] Testdisk: partitions
   - [ ] Photorec: deleted data
   - [ ] Ddrescue: from bad drives
-- [ ] Forensic wipe tools (hdparam)
+- [ ] Forensic wipe tools (hdparam, blkdiscard, GUI frontends?)
 - [ ] Web browser (brave, tor shortcut)
 - [ ] Cpu/gpu/ram stresser
 - [ ] Find out windows key
